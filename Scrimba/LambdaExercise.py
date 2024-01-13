@@ -9,7 +9,7 @@ print(f(2))
 # def strip_spaces(str):
 #    return ''.join(str.split(' '))
 #write equivalent lambda and insert Lambda here
-strip_spaces1 = lambda strInput:''.join(strInput.split(' '))   
+strip_spaces1 = lambda str_input:''.join(str_input.split(' '))   
 print(strip_spaces1('Monty Pythons Flying Circus')) 
 
 
@@ -55,5 +55,5 @@ player_list = [Eric, John, Terry]
 
 
 #Exercise: Sort this by score using lambda!
-player_list.sort(key = lambda objPlayer:objPlayer.score)
+player_list.sort(key = lambda obj_player:obj_player.score)
 print([player.name for player in player_list])
