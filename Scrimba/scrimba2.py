@@ -1,10 +1,10 @@
-intA = 6
-intB = 2
+int_a = 6
+int_b = 2
 
-print('Addition : ', intA + intB)
-print('Subtraction : ', intA - intB)
-print('Multiplication : ', intA * intB)
-print('Division (float) : ', intA / intB)
-print('Division (floor) : ', intA // intB)
-print('Modulus : ', intA % intB)
-print('Exponent : ', intA ** intB)
+print('Addition : ', int_a + int_b)
+print('Subtraction : ', int_a - int_b)
+print('Multiplication : ', int_a * int_b)
+print('Division (float) : ', int_a / int_b)
+print('Division (floor) : ', int_a // int_b)
+print('Modulus : ', int_a % int_b)
+print('Exponent : ', int_a ** int_b)
