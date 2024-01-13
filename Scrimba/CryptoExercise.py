@@ -5,38 +5,39 @@
 
 
 # run encode or decode
-# return result
 # clean and beautify the code 
 
 def EnigmaLight() :
-    strNewMessage = ""
+    str_new_message = ""
     # Create keys string
-    strKeys = "abcdefghijklmnopqrstuvwxyz !"
+    str_keys = "abcdefghijklmnopqrstuvwxyz !"
     # Autogenerate values string by offsetting original string
-    strValues = strKeys[-1] + strKeys[0:-1]
+    str_values = str_keys[-1] + str_keys[0:-1]
     #print(strKeys)
     #print(strValues)
 
     # Option 1: Create two dictionaries
-    dictEncrypt1 = dict(zip(strKeys, strValues))
-    dictDecrypt1 = dict(zip(strValues, strKeys))
+    dct_encrypt1 = dict(zip(str_keys, str_values))
+    dct_decrypt1 = dict(zip(str_values, str_keys))
 
     # Option 2: Create one dictionary and flip
-    dictEncrypt2 = dict(zip(strKeys, strValues))
-    dictDecrypt2 = {value:key for key, value in dictEncrypt2.items()}
+    dct_encrypt2 = dict(zip(str_keys, str_values))
+    dct_decrypt2 = {value:key for key, value in dct_encrypt2.items()}
 
     # Get user input 'the message' and mode
-    strMessage = input("Enter your secret message: ")
-    strMode = input("Crypto Mode: (E)ncode or (D)ecode: ")
+    str_message = input("Enter your secret message: ")
+    str_mode = input("Crypto Mode: (E)ncode or (D)ecode: ")
 
     # Run encode or decode
-    if(strMode.lower() == "e") :
-        strNewMessage = ''.join([dictEncrypt1[charLetter] for charLetter in strMessage.lower()])
-    elif(strMode.lower() == "d") :
-        strNewMessage = ''.join([dictDecrypt1[charLetter] for charLetter in strMessage.lower()])
+    # Example changed this to one case where D was default (if/else)
+    if(str_mode.lower() == "e") :
+        str_new_message = ''.join([dct_encrypt1[charLetter] for charLetter in str_message.lower()])
+    elif(str_mode.lower() == "d") :
+        str_new_message = ''.join([dct_decrypt1[charLetter] for charLetter in str_message.lower()])
     else :
-        strNewMessage = "Invalid mode!"
+        str_new_message = "Invalid mode!"
 
-    return strNewMessage.capitalize()
+    # Return result
+    return str_new_message.capitalize()
 
 print(EnigmaLight())
