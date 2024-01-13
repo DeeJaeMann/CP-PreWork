@@ -9,31 +9,31 @@
 # whle loop, print to the input box (This is specific to this platform)
 import random
 
-def GetGuess(intThisGuessCount) :
-    intThisGuess = int(input(f"\nPlease enter guess #{intThisGuessCount}: "))
-    if (intThisGuess > 100) or (intThisGuess < 0) :
+def GetGuess(int_this_guess_count) :
+    int_this_guess = int(input(f"\nPlease enter guess #{int_this_guess_count}: "))
+    if (int_this_guess > 100) or (int_this_guess < 0) :
         print("Please enter a number between 1 and 100!")
-        GetGuess(intThisGuessCount)
+        GetGuess(int_this_guess_count)
     else :
-        return intThisGuess
+        return int_this_guess
 
-intGuess = 0
-intTotalGuesses = 5
-intCorrectNumber = random.randint(1, 100)
+int_guess = 0
+int_total_guesses = 5
+int_correct_number = random.randint(1, 100)
 #print(f"{intCorrectNumber} is the target number")
-print(f"Guess a number between 1 and 100.  You have {intTotalGuesses} tries.")
+print(f"Guess a number between 1 and 100.  You have {int_total_guesses} tries.")
 
-while intGuess < intTotalGuesses:
-    intGuess += 1
-    intMyGuess = GetGuess(intGuess)
-    if (intMyGuess == intCorrectNumber) :
-        print(f"That is correct!  You guessed {intGuess} times!")
+while int_guess < int_total_guesses:
+    int_guess += 1
+    int_my_guess = GetGuess(int_guess)
+    if (int_my_guess == int_correct_number) :
+        print(f"That is correct!  You guessed {int_guess} times!")
         break
-    elif (intGuess < intTotalGuesses) :
-        print(f"I'm sorry, try again! {intTotalGuesses - intGuess} tries left!")
-        if(intMyGuess < intCorrectNumber) :
+    elif (int_guess < int_total_guesses) :
+        print(f"I'm sorry, try again! {int_total_guesses - int_guess} tries left!")
+        if(int_my_guess < int_correct_number) :
             print("Your guess is too low!")
         else :
             print("Your guess is too high!")
     else :
-        print(f"You lose!  The number was {intCorrectNumber}")
+        print(f"You lose!  The number was {int_correct_number}")
