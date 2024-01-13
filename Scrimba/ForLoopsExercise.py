@@ -16,11 +16,11 @@
 
 names = ['john ClEEse','Eric IDLE','michael']
 names1 = ['graHam chapman', 'TERRY', 'terry jones']
-intNamesToAdd = 2
-arrNames = names + names1
-for index in range(intNamesToAdd) :
-    strAddName = input(f"Please enter name {index + 1}: ")
-    arrNames.append(strAddName)
+int_names_to_add = 2
+arr_names = names + names1
+for int_index in range(int_names_to_add) :
+    str_add_name = input(f"Please enter name {int_index + 1}: ")
+    arr_names.append(str_add_name)
 
-for strName in arrNames :
-    print(f"{strName.title()}! You are invited to the party on saturday.")
+for str_name in arr_names :
+    print(f"{str_name.title()}! You are invited to the party on saturday.")
