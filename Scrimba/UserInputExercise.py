@@ -11,8 +11,8 @@
 # Use correct types
 # Capitalize the first name
 
-strName = input('Please enter your name:  ')
-floatKM = float(input('Enter a distance in km:  '))
-floatMI = floatKM / 1.609
+str_name = input('Please enter your name:  ')
+flt_km = float(input('Enter a distance in km:  '))
+flt_mi = flt_km / 1.609
 
-print(f"Hello {strName.capitalize()}.  {floatKM}km is {round(floatMI, 1)}mi.")
+print(f"Hello {str_name.capitalize()}.  {flt_km}km is {round(flt_mi, 1)}mi.")
