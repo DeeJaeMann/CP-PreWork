@@ -11,12 +11,12 @@ class Movie:
         print(f"IMDB Score: {self.imdb_score}")
         print(f"I have seen it: {self.have_seen}")
 
-objFilm1 = Movie("Life of Brian", 1979, 8.1, True)
-objFilm2 = Movie("The Holy Grail", 1975, 8.2, True)
+obj_film1 = Movie("Life of Brian", 1979, 8.1, True)
+obj_film2 = Movie("The Holy Grail", 1975, 8.2, True)
 
 #print(objFilm1.title, objFilm1.imdb_score)
-objFilm2.nice_print()
+obj_film2.nice_print()
 
-listFilms = [objFilm1, objFilm2]
-for element in listFilms:
+lst_films = [obj_film1, obj_film2]
+for element in lst_films:
     element.nice_print()
