@@ -1,8 +1,8 @@
 # Create appropriate variables for Item name and the price
 # and how many you have in stock
 
-strItemName = "widget"
-floatPrice = 23.5
-intStock = 100
+str_item_name = "widget"
+flt_price = 23.5
+int_stock = 100
 
-print(strItemName, floatPrice, intStock)
+print(str_item_name, flt_price, int_stock)
