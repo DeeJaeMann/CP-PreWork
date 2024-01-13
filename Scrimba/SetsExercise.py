@@ -7,15 +7,15 @@
 #5. Show only the names who only appear in one of the lists
 #6. Create a new cars-list without duplicates
 
-setFriends = {'John','Michael','Terry','Eric','Graham'}
-setMyFriends = {'Reg','Loretta','Colin','John','Graham'}
-arrCars = ['900','420','V70','911','996','V90','911','911','S','328','900']
+set_friends = {'John','Michael','Terry','Eric','Graham'}
+set_my_friends = {'Reg','Loretta','Colin','John','Graham'}
+arr_cars = ['900','420','V70','911','996','V90','911','911','S','328','900']
 
-print('Eric' in setFriends and 'John' in setFriends)
+print('Eric' in set_friends and 'John' in set_friends)
 #print('John' in setFriends)
-print(setFriends.union(setMyFriends))  # can also use setFriends | setMyFriends
-print(setFriends.intersection(setMyFriends)) # can also use setFriends & setMyFriends
-print(setFriends.difference(setMyFriends)) # can also use setFriends - setMyFriends
-print(setFriends.symmetric_difference(setMyFriends))  # can also use setFriends ^ setMyFriends
-setCars = set(arrCars)
-print(setCars)
+print(set_friends.union(set_my_friends))  # can also use setFriends | setMyFriends
+print(set_friends.intersection(set_my_friends)) # can also use setFriends & setMyFriends
+print(set_friends.difference(set_my_friends)) # can also use setFriends - setMyFriends
+print(set_friends.symmetric_difference(set_my_friends))  # can also use setFriends ^ setMyFriends
+set_cars = set(arr_cars)
+print(set_cars)
