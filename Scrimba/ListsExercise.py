@@ -12,21 +12,21 @@
 # Separately and in total
 #  3 prints in total
 
-arrSalesW1 = [7,3,42,19,15,35,9]
-arrSalesW2 = [12,4,26,10,7,28]
-arrSales = []
+arr_sales_w1 = [7,3,42,19,15,35,9]
+arr_sales_w2 = [12,4,26,10,7,28]
+arr_sales = []
 
-intDayAdded = int(input('Please enter sales for the last day:  '))
-arrSalesW2.append(intDayAdded)
-arrSales = arrSalesW1 + arrSalesW2
+int_day_added = int(input('Please enter sales for the last day:  '))
+arr_sales_w2.append(int_day_added)
+arr_sales = arr_sales_w1 + arr_sales_w2
 #print(arrSales)
-floatProfit = 1.5
-arrBestSales = max(arrSales) * floatProfit
-arrWorstSales = min(arrSales) * floatProfit
-intSalesSum = sum(arrSales) * floatProfit
-intW1Sum = sum(arrSalesW1) * floatProfit
-intW2Sum = sum(arrSalesW2) * floatProfit
+flt_profit = 1.5
+arr_best_sales = max(arr_sales) * flt_profit
+arr_worst_sales = min(arr_sales) * flt_profit
+int_sales_sum = sum(arr_sales) * flt_profit
+int_w1_sum = sum(arr_sales_w1) * flt_profit
+int_w2_sum = sum(arr_sales_w2) * flt_profit
 
-print(f"Best Day: {arrBestSales}")
-print(f"Worst Day:  {arrWorstSales}")
-print(f"Total Sales: {intSalesSum}, Week 1: {intW1Sum}, Week 2: {intW2Sum}")
+print(f"Best Day: {arr_best_sales}")
+print(f"Worst Day:  {arr_worst_sales}")
+print(f"Total Sales: {int_sales_sum}, Week 1: {int_w1_sum}, Week 2: {int_w2_sum}")
