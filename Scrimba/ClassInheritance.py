@@ -20,6 +20,6 @@ class Wizard(Doctor, Fighter):
     def heal(self):
         print(f"Heals 15 health points")
 
-objCharacter1 = Wizard()
-objCharacter1.move()
-objCharacter1.heal()
+obj_character1 = Wizard()
+obj_character1.move()
+obj_character1.heal()
