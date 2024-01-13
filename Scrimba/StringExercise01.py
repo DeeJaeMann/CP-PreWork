@@ -6,9 +6,9 @@
 #
 # Print the same string backwards..
 
-strSentence = "Welcome to Python 101: Strings"
-strTyler = strSentence[8] + "" + strSentence[12] + "" + strSentence[2] + "" + strSentence[1] + "" + strSentence[-5]
-strFirstResult = strSentence[-10:-9] + " " + strSentence[:7] + " " + strSentence[-5:-1] + " " + strSentence[8:10] + " " + strTyler
+str_sentence = "Welcome to Python 101: Strings"
+str_tyler = str_sentence[8] + "" + str_sentence[12] + "" + str_sentence[2] + "" + str_sentence[1] + "" + str_sentence[-5]
+str_first_result = str_sentence[-10:-9] + " " + str_sentence[:7] + " " + str_sentence[-5:-1] + " " + str_sentence[8:10] + " " + str_tyler
 
-print(strFirstResult.title())
-print(strFirstResult[::-1].title())
+print(str_first_result.title())
+print(str_first_result[::-1].title())
