@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /*
 From Perl Weekly Challenge 247
  Secret Santa
